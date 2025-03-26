@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSAP - Flip</title>
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <main>
+        <div class="container cont-1">
+            <div class="original">
+                <div class="box box-1">Flip</div>
+                <!-- <div style="position: relative;" class="box box-2">Sec</div> -->
+                <!-- <div style="position: relative;" class="box box-3">Third</div> -->
+                <div class="new">New Container</div>
+            </div>
+
+            <div style="display: grid; place-items: center;">
+                <button class="btn changeCont">Change Containers</button>
+            </div>
+        </div>
+
+        <div class="container cont-2">
+            <div class="cont-21">
+                <div>
+                    <div class="target"></div>
+                    <button class="fit-btn">Flip.fit()</button>
+                </div>
+
+                <div class="cont-212">
+                    <div class="child-1">Child 1</div>
+                    <div class="child-2">Child 2</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container cont-3">
+            <button class="btn change-flex">Change Flex</button>
+
+            <div class="group">
+                <div class="box-3">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam quis, recusandae cupiditate minima facere molestias debitis in quo molestiae quaerat vel harum voluptate, possimus itaque suscipit? Soluta vel qui quis!
+                </div>
+
+                <div class="box-3">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus totam iste inventore neque. Saepe reiciendis corrupti omnis assumenda iste quos quod impedit incidunt voluptate, expedita praesentium id reprehenderit non dolor rem optio facilis voluptates accusamus fugiat rerum cupiditate. Repudiandae.
+                </div>
+
+                <div class="box-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aliquam maxime itaque fuga commodi autem repellat! Voluptatibus necessitatibus esse nemo!
+                </div>
+
+                <div class="box-3">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing.
+                </div>
+            </div>
+        </div>
+
+        <div class="container cont-4">
+            <div class="buttons-4">
+                <button class="btn switch-col">Switch Column Order</button>
+                <button class="btn switch-row">Switch Row Order</button>
+            </div>
+
+            <div class="content">
+                <div class="cont-div cont-div-1">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores esse quod asperiores ducimus earum voluptatum tempora harum fuga nulla, natus inventore dicta vitae dolorum voluptas magnam. Perferendis culpa esse aliquam sequi facilis, rem ex tenetur voluptatem similique nihil pariatur nisi eos laudantium ipsam odio fugit saepe magni natus minima architecto nesciunt sit velit? Dolore, commodi eos quisquam voluptas ipsam ad id culpa nihil, eum corrupti non eveniet placeat alias deserunt aspernatur adipisci vel repellendus numquam exercitationem, error at. Ducimus, sapiente qui aperiam nam et harum doloribus necessitatibus odit quasi cumque debitis dicta. Facere reprehenderit doloremque iusto? Esse, reiciendis.
+                    </p>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi modi quam optio expedita corrupti voluptatem in voluptatum at quaerat, possimus a debitis rem laboriosam sint dolore! Dolores accusantium dolorum quis doloribus perferendis inventore voluptatum non debitis? Unde quidem in non repellendus mollitia aperiam veniam ullam, rerum itaque fuga esse exercitationem inventore fugiat accusamus assumenda placeat vitae pariatur sit aliquam perspiciatis necessitatibus ea ab alias earum. Quisquam magni distinctio perferendis dolorum, hic est molestias, doloribus assumenda optio quis cumque quos voluptates illo nobis reprehenderit cupiditate sed nemo iste sapiente dolor, maiores vitae recusandae! Corporis, nesciunt aut.
+                    </p>
+                </div>
+
+                <div class="cont-div cont-div-2">
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, voluptate iusto! Minus totam quas ipsa mollitia alias velit ut nihil, molestias illo assumenda?
+                    </p>
+
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, voluptate iusto! Minus totam quas ipsa mollitia alias velit ut nihil, molestias illo assumenda?
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container cont-5">
+            <button class="btn shuffle-btn">Shuffle</button>
+
+            <div class="container1">
+                <div class="box-5 orange">1</div>
+                <div class="box-5 orange">2</div>
+                <div class="box-5 orange">3</div>
+                <div class="box-5 purple">4</div>
+                <div class="box-5 purple">5</div>
+                <div class="box-5 purple">6</div>
+            </div>
+
+            <div class="container2">
+
+            </div>
+        </div>
+
+        <div class="container cont-6">
+            <img src="./Images/spacejoy-xkJ2_THgKmk-unsplash.jpg" alt="" class="thumbnail" data-flip-id="img">
+
+            <div>
+                <img src="./Images/spacejoy-xkJ2_THgKmk-unsplash.jpg" alt="" class="full-img" data-flip-id="img">
+            </div>
+        </div>
+
+    </main>
+
+    <!-- JS Scripts -->
+    <script type="module" src="./index.js" defer></script>
+</body>
+</html>

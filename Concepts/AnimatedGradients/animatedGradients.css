@@ -1,0 +1,172 @@
+:root {
+    --gradient: linear-gradient(
+        45deg,
+        #845ec2,
+        #d65db1,
+        #ff6f91,
+        #ff9671,
+        #ffc75f,
+        #f9f871
+    );
+
+    --gradient2: conic-gradient(
+        #845ec2,
+        #d65db1,
+        #ff6f91,
+        #ff9671,
+        #ffc75f,
+        #f9f871,
+        #845ec2
+
+    );
+
+    --gradient3: conic-gradient(
+        black,
+        red
+    );
+
+    --clr-oxfordBlue: rgb(0, 33, 71);
+    --clr-tan: rgb(210, 180, 140);
+    --clr-white: #fff;
+    --clr-dark: rgb(24, 31, 38);
+
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+
+body {
+    /* padding: 1rem 6rem; */
+    background-image: var(--gradient);
+    /* background-color: var(--clr-tan); */
+    /* background-color: var(--clr-oxfordBlue); */
+    /* background-blend-mode: multiply; */
+
+    background-size: 400%;
+    background-position: left;
+    min-height: 100vh;
+
+    animation: bg-animation 20s linear infinite alternate;
+    
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid red;
+    border-radius: 10px;
+    margin-inline: auto;
+    min-height: 60vh;
+    min-width: 80%;
+    padding: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: var(--clr-dark);
+   
+}
+
+
+@keyframes bg-animation {
+    0% {
+        background-position: left;
+    }
+
+    100% {
+        background-position: right;
+    }
+}
+
+.container h1 {
+    font-weight: bold;
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: transparent;
+
+    background-image: var(--gradient);
+    background-clip: text;
+    background-size: 400%;
+
+    animation: bg-animation 20s linear infinite alternate;
+}
+
+.container button {
+    margin: 20px;
+}
+
+
+.card {
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--clr-oxfordBlue);
+
+    position: relative;
+
+    /* z-index: 1; */
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.card::after,
+.card::before {
+    content: "";
+    position: absolute;
+    height: calc(100% + 8px);
+    width: calc(100% + 8px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: var(--gradient2);
+    background-image: conic-gradient(
+        from var(--angle),
+        transparent 70%,
+        red
+    );
+    /* padding: 3px; */
+    border-radius: 10px;
+
+    z-index: -1;
+
+    animation: spin 10s linear infinite;
+}
+
+.card::before {
+    filter: blur(30px);
+    opacity: 0.1;
+}
+
+@keyframes spin {
+    from {
+        --angle: 0deg;
+    }
+
+    to {
+        --angle: 360deg;
+    }
+}

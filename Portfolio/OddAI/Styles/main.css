@@ -1,0 +1,443 @@
+/* =====------  MAIN  ------===== */
+.main-1 {
+    /* border: 1px solid red; */
+    margin-bottom: 1rem;
+    padding-top: 4rem;
+}
+
+.main-1 h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+/* CARDS */
+/* Cards 1 */
+.main-1 .cards-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--gap-card);
+    margin-bottom: var(--gap-card);
+}
+
+/* Cards 2 */
+.main-1 .cards-2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: var(--gap-card);
+}
+
+/* Cards */
+.cards-1 .card-md::after,
+.cards-1 .card-md-::before {
+    background-image: conic-gradient(
+        from 220deg,
+        var(--clr-primary1) 30deg,
+        var(--clr-gray1) 50deg,
+        var(--clr-gray1) 340deg,
+        var(--clr-primary1)
+    );
+}
+
+.cards-2 .card-md::after,
+.cards-2 .card-md-::before {
+    background-image: conic-gradient(
+        from 40deg,
+        var(--clr-primary1) 30deg,
+        var(--clr-gray1) 50deg,
+        var(--clr-gray1) 340deg,
+        var(--clr-primary1)
+    );
+}
+
+.cards-1 .card-1 canvas {
+    /* border: 1px solid red; */
+    height: 15rem;
+    border-radius: var(--radius-card);
+    overflow: hidden;
+}
+
+.card .graphic {
+    /* border: 1px solid red; */
+    height: 15rem;
+    border-radius: var(--radius-card);
+    overflow: hidden;
+}
+
+/* .cards-1 .card-2 img {
+    mix-blend-mode: color-dodge;
+}
+
+.cards-2 .card-1 img {
+    mix-blend-mode: color-dodge;
+} */
+
+/* Default state */
+.cards-1 .card-2 img,
+.cards-2 .card-1 img {
+    mix-blend-mode: color-dodge; 
+}
+
+/* Apply blend mode only when visible */
+/* .show .cards-1 .card-2 img,
+.show .cards-2 .card-1 img {
+    mix-blend-mode: color-dodge; 
+} */
+
+
+
+/* MAIN 2 */
+.main-2 {
+    padding-top: 7rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap-card);
+    margin-bottom: 3rem;
+}
+
+.main-2 .content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding-right: 5rem;
+}
+
+.main-2 .content h2,
+.main-3 h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.main-2 .content p {
+    color: var(--clr-gray);
+    font-size: .8rem;
+    margin-bottom: 1rem;
+}
+
+/* .main-2 .content p:last-child {
+    margin-bottom: 5rem;
+} */
+
+.main-2 .content button {
+    color: var(--clr-white);
+    background: var(--clr-black);
+    border: 1px solid var(--clr-primary1);
+}
+
+
+/* CARDS */
+.main-2 .cards-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr; */
+    gap: var(--gap-card);
+}
+
+.main-2 .cards-3 .icon {
+    align-self: start;
+    border: 1px solid var(--clr-primary1);
+    display: grid;
+    place-items: center;
+    padding: var(--padding-icon);
+    border-radius: var(--radius-card2);
+}
+
+.main-2 .cards-3 .icon svg {
+    fill: var(--clr-primary1);
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+
+/* MAIN 3 */
+.main-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+    padding-top: 4rem;
+}
+
+.main-3 h2 {
+    margin-bottom: 1rem;
+}
+
+.main-3 > p {
+    font-size: .9rem;
+    margin-bottom: 1rem;
+}
+
+.main-3 .choose-plan {
+    margin-bottom: 2rem;
+    font-size: .9rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.main-3 .choose-plan span:not(:last-child) {
+    font-size: .9rem;
+    font-weight: bold;
+
+}
+
+.main-3 .choose-plan button {
+    padding: var(--padding-btn3);
+    border: 1px solid var(--clr-white);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border-radius: var(--radius-card);
+    width: 2.5rem;
+    position: relative;
+}
+
+.main-3 .choose-plan .toggle-plan {
+    width: 1rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: var(--clr-primary1);
+    transition: all .3s ease;
+}
+
+.main-3 .choose-plan span:last-child {
+    padding: 0rem .3rem;
+    border: 1px solid var(--clr-white);
+    border-radius: var(--radius-card);
+    font-size: .6rem;
+}
+
+/* PLAN CARDS */
+.main-3 .plan-cards {
+    /* border: 1px solid red; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap-card);
+}
+
+.main-3 .plan-cards .plan-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    border: 1px solid var(--clr-gray);
+    padding: var(--padding-card);
+    border-radius: var(--radius-card);
+
+}
+
+.main-3 .plan-cards .plan-card .head {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--clr-gray);
+}
+
+.main-3 .plan-cards .plan-card .head h3 {
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--clr-white);
+    margin-bottom: .5rem;
+}
+
+.main-3 .plan-cards .plan-card .head p {
+    font-size: .9rem;
+}
+
+.main-3 .plan-cards .plan-card .body {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.main-3 .plan-cards .plan-card .body p {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.main-3 .plan-cards .plan-card svg {
+    fill: var(--clr-primary1);
+}
+
+/* Button */
+.main-3 .plan-cards .plan-card button {
+    /* justify-self: end; */
+    color: var(--clr-white);
+    text-align: center;
+    border-radius: var(--radius-card2);
+    border: 2px solid var(--clr-gray);
+    background: var(--clr-gray1);
+    padding: .4rem 1rem;
+}
+
+.main-3 .plan-cards .plan-pro button {
+    background: var(--clr-primary1);
+}
+
+.main-3 .plan-cards .plan-pro {
+    background-image: linear-gradient(
+        transparent,
+        var(--clr-bg-card2)
+    );
+    box-shadow: 0 0 20px var(--clr-bg-card2);
+}
+
+/* MAIN 4 */
+/* FAQ */
+.main-4 {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: var(--gap-card);
+    margin-bottom: 2rem;
+    padding-top: 4rem;
+}
+
+.main-4 h2 {
+    text-align: center;
+}
+
+.main-4 .faq {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: var(--radius-card2);
+
+    background-image: linear-gradient(
+        200deg,
+        var(--clr-bg-card) 60%,
+        var(--clr-bg-card2)
+    );
+
+    /* background: transparent; */
+}
+
+.main-4 .faq > div {
+    display: flex;
+    gap: 2rem;
+}
+
+.faq::before,
+.faq::after {
+    border-radius: var(--radius-card2);
+    background-image: conic-gradient(
+        from 88deg,
+        var(--clr-primary1) 4deg,
+        var(--clr-gray1) 6deg 178deg,
+        var(--clr-primary1) 180deg 184deg,
+        var(--clr-gray1) 186deg 358deg,
+        var(--clr-primary1)
+
+    );
+
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+}
+
+.faq::before {
+    filter: blur(0);
+}
+
+
+/* FAQ POPUPS */
+.main-4 .faq {
+    position: relative;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.main-4 .faq:hover {
+    box-shadow: 0 0 20px var(--clr-bg-card2);
+}
+
+.main-4 .faq:active {
+    box-shadow: inset 5px 5px 10px var(--clr-white);
+}
+
+.main-4 .faq .faq-popup {
+    border: 1px solid var(--clr-primary1);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 45%;
+    height: 10rem;
+    padding: var(--padding-card2);
+    border-radius: var(--radius-card2);
+    box-shadow: 0 0 20px var(--clr-bg-card2);
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    /* display: grid;
+    place-items: center; */
+
+    backdrop-filter: blur(10px);
+    z-index: 50;
+    display: none;
+}
+
+/* .main-4 .faq:not(:nth-of-type(4)) .faq-popup {
+    display: none;
+} */
+
+
+
+
+/* FOOTER */
+footer {
+    border-top: 1px solid var(--clr-gray);
+    padding-top: 2rem;
+}
+
+footer .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+footer .container .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer .container .left .head h4 {
+    margin-bottom: 1rem;
+}
+
+footer .container .left .head p {
+    color: var(--clr-gray);
+    font-size: .9rem;
+}
+
+footer .container .left .socials {
+    display: flex;
+    align-items: center;
+    gap: var(--gap-card);
+}
+
+
+
+
+footer .container .right {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: end;
+}
+
+footer .container .right > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+footer .container .right > div h5:not(:first-child) {
+    font-weight: 500;
+    color: var(--clr-gray);
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSAP Intro</title>
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+<body>
+    
+    <main>
+
+        <div class="container">
+            <div class="box-1">
+                Box
+            </div>
+            
+            <div class="circle-1">
+                Circle
+            </div>
+        </div>
+
+        <div class="container cont-1">
+            <input type="range" min="0" max="100" value="0" class="slider">
+            <div class="progress"></div>
+            <div class="label">0%</div>
+        </div>
+
+        <div class="container cont-2">
+
+        </div>
+
+        <div class="container">
+            <button class="revert-btn btn">Revert</button>
+
+            <div class="cont-3"></div>
+
+        </div>
+
+        <div class="container cont-4">
+            <div class="tl-btns">
+                <button id="start" class="btn tl-btn">Start</button>
+                <button id="pause" class="btn tl-btn">Pause</button>
+                <button id="resume" class="btn tl-btn">Resume</button>
+                <button id="seek" class="btn tl-btn">Seek</button>
+                <button id="reverse" class="btn tl-btn">Reverse</button>
+                <button id="restart" class="btn tl-btn">Restart</button>
+            </div>
+
+            <div class="tl-btns">
+                <button id="red-light" class="btn">Red Light</button>
+                <button id="amber-light" class="btn">Amber Light</button>
+                <button id="green-light" class="btn">Green Light</button>
+            </div>
+
+            <div class="tl-btns">
+                <h4>Repetitions</h4>
+                <label for="" id="reps" class="btn">0</label>
+
+                <h4>Current Animation</h4>
+                <label for="" id="label" class="btn"></label>
+            </div>
+
+            <div class="circle-4"></div>
+            <div class="box-4"></div>
+        </div>
+
+        <div class="container cont-5">
+            <div class="tl-btns">
+                <label for="" id="screenLabel" class="btn">Screen Size</label>
+            </div>
+            <div class="circle-5"></div>
+            <div class="box-5"></div>
+        </div>
+
+        <div class="container cont-6">
+            <div class="tl-btns">
+                <button class="btn play">Play</button>
+                <button class="btn pause">Pause</button>
+                <button class="btn scale">Scale-2</button>
+            </div>
+
+            <div>
+                <div class="circle-6"></div>
+                <div class="box-6"></div>
+            </div>
+
+            <div style="margin-block: 2rem;">
+                <input type="range" min="0" max="100" value="0" class="slider1" id="slider1">
+                <label for="slider1" class="sliderLabel1">0</label>
+            </div>
+
+            <div style="margin-block: 2rem;">
+                <input type="range" min="0" max="100"  value="0" class="slider2" id="slider2">
+                <label for="slider2" class="sliderLabel2">0</label>
+            </div>
+
+            <div style="margin-block: 2rem;">
+                <div class="box-7"></div>
+                <div class="box-7"></div>
+                <div class="box-7"></div>
+                <div class="box-7"></div>
+
+                <button class="btn clr-btn">Change Bg</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- JS Scripts -->
+    <script type="module" src="./index.js" defer></script>
+</body>
+</html>

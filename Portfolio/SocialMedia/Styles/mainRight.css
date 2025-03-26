@@ -1,0 +1,296 @@
+
+/* MAIN RIGHT */
+.main__right {
+    position: sticky;
+    top: var(--sticky-top-right);
+    bottom: 0;
+    /* align-self: end; */
+    height: max-content;
+}
+
+
+/* MESSAGES */
+.main__right .messages {
+    background: var(--clr-white);
+    border-radius: var(--radius-card);
+    padding: var(--padding-card);
+}
+
+.main__right .messages .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+/* Message Category */
+.main__right .messages .category {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.main__right .messages .category h6 {
+    width: 100%;
+    text-align: center;
+    border-bottom: 4px solid var(--clr-light);
+    padding: 0.5rem 0.3rem;
+    font-size: .85rem;
+}
+
+.main__right .messages .category .active {
+    border-color: var(--clr-dark);
+    border-color: var(--clr-primary);
+}
+
+/* Profile Pic */
+.main__right .messages .message .profile-pic {
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+    overflow: visible;
+}
+
+.main__right .messages .message .profile-pic img {
+    border-radius: 50%;
+}
+
+/* Profile pic - Active User */
+.main__right .messages .message .profile-pic .active {
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background: var(--clr-success);
+    border: 3px solid var(--clr-white);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.main__right .messages .message {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    align-items: start;
+}
+
+.main__right .messages .message:last-child {
+    margin: 0;
+}
+
+.main__right .messages .message p {
+    font-size: 0.8rem;
+}
+
+.main__right .message-requests {
+    color: var(--clr-primary);
+}
+
+
+
+/* FRIEND REQUESTS */
+.friend-requests {
+    margin-top: 1rem;
+    background: var(--clr-white);
+    padding: var(--padding-card);
+    border-radius: var(--radius-card);
+}
+
+.friend-requests h4 {
+    margin-bottom: 1rem;
+}
+
+.friend-requests .request {
+    margin-bottom: 0.7rem;
+}
+
+.friend-requests .request .info {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.friend-requests .request .profile-pic {
+    width: 2rem;
+    height: 2rem;
+}
+
+.friend-requests .request .info p {
+    font-size: 0.85rem;
+}
+
+.friend-requests .request .action {
+    display: flex;
+    /* gap: 1rem; */
+    align-items: center;
+    justify-content: space-between;
+}
+
+.friend-requests .request .action .btn {
+    padding: var(--padding-btn2);
+}
+
+.friend-requests .request .action .btn:last-child {
+    background: var(--clr-light);
+    border: 1px solid var(--clr-primary);
+    /* color: var(--clr-dark); */
+}
+
+
+
+/* THEME CUSTOMIZATION */
+.customize-theme {
+    background: transparent;
+    backdrop-filter: blur(2px);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    font-size: 0.9rem;
+
+    display: none;
+}
+
+.customize-theme .card {
+    background: var(--clr-white);
+    padding: 3rem;
+    border-radius: var(--radius-card);
+    width: 50%;
+    box-shadow: 0 0 2rem var(--clr-primary);
+}
+
+/* FONT-SIZE */
+.customize-theme .font-size > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--clr-light);
+    border-radius: var(--radius-card);
+    padding: var(--padding-search);
+}
+
+.customize-theme .font-size .choose-size {
+    background: var(--clr-secondary);
+    height: 0.3rem;
+    width: 100%;
+    margin: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.customize-theme .font-size .choose-size span {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: var(--clr-secondary);
+    cursor: pointer;
+}
+
+.customize-theme .font-size .choose-size span.active {
+    background: var(--clr-primary);
+}
+
+/* PRIMARY COLORS */
+.customize-theme .color {
+    margin-top: 2rem;
+}
+
+.customize-theme .choose-color {
+    background: var(--clr-light);
+    padding: var(--padding-search);
+    border-radius: var(--radius-card);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.customize-theme .choose-color span {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.customize-theme .choose-color span:nth-child(1) {
+    background: hsl(252, 75%, 60%);
+}
+
+.customize-theme .choose-color span:nth-child(2) {
+    background: hsl(52, 75%, 60%);
+}
+
+.customize-theme .choose-color span:nth-child(3) {
+    background: hsl(352, 75%, 60%);
+}
+
+.customize-theme .choose-color span:nth-child(4) {
+    background: hsl(152, 75%, 60%);
+}
+
+.customize-theme .choose-color span:nth-child(5) {
+    background: hsl(202, 75%, 60%);
+}
+
+.customize-theme .choose-color span.active {
+    border: 5px solid white;
+}
+
+
+/* BACKGROUND COLORS */
+.customize-theme .background {
+    margin-top: 2rem;
+}
+
+.customize-theme .choose-bg {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.customize-theme .choose-bg > div {
+    padding: var(--padding-search);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: .9rem;
+    font-weight: bold;
+    border-radius: var(--radius-card);
+    cursor: pointer;
+    /* border: 1px solid var(--clr-primary); */
+}
+
+.customize-theme .choose-bg > div.active {
+    border: 2px solid var(--clr-primary);
+}
+
+.customize-theme .choose-bg .bg-1 {
+    background: white;
+    color: black;
+}
+
+.customize-theme .choose-bg .bg-2 {
+    background: hsl(252, 30%, 17%);
+    color: white;
+}
+
+.customize-theme .choose-bg .bg-3 {
+    background: hsl(252, 30%, 10%);
+    color: white;
+}
+
+.customize-theme .choose-bg > div span {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 2px solid var(--clr-gray);
+    margin-right: 1rem;
+}
+

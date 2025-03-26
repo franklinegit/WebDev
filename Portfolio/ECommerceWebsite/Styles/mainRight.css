@@ -1,0 +1,132 @@
+
+/* TOP CATEGORIES */
+.topCategories {
+    background: var(--clr-gray-0);
+    max-width: 100%;
+    border-radius: var(--radius-2);
+    margin: 1.5rem 0 1rem;
+    padding: 1rem;
+}
+
+
+.topCategories header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#categories {
+    /* background: red; */
+    max-width: 100%;
+}
+
+.topCategories ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin: 0.6rem 0;
+}
+
+.topCategories ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topCategories ul li span {
+    width: 0.7rem;
+    aspect-ratio: 1/1;
+    background: #b1b1b1;
+    border-radius: 50%;
+    display: block;    
+}
+
+.topCategories ul li:nth-child(2) span {
+    background: var(--clr-purple);
+}
+
+.topCategories ul li:nth-child(3) span {
+    background: var(--clr-success);
+}
+.topCategories ul li:nth-child(4) span {
+    background: var(--clr-info);
+}
+
+.topCategories ul li div {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.topCategories button {
+    margin-top: 0.7rem;
+    padding: .3rem 0.7rem;
+    text-align: center;
+    width: 100%;
+    border-radius: var(--radius-1);
+    background: var(--clr-gray-50);
+    color: var(--clr-gray-900);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+/* UPCOMING EVENTS */
+.nextEvents {
+    padding: 1rem;
+    border-radius: var(--radius-2);
+    background: var(--clr-gray-0);
+}
+
+.nextEvents header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nextEvents .events__img {
+    margin: 1rem 0;
+    border-radius: var(--radius-2);
+    height: 8rem;
+    overflow: hidden;
+}
+
+.nextEvents ul {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.nextEvents ul li {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    box-shadow: 0 0 1rem var(--clr-gray-100);
+    padding: 0.3rem 0.5rem;
+    border-radius: var(--radius-2);
+}
+
+.nextEvents ul li img {
+    /* margin: 1rem 0; */
+    border-radius: var(--radius-1);
+    height: 3rem;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+}
+
+
+
+.nextEvents button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: var(--clr-gray-50);
+    padding: 0.3rem 0.7rem;
+    border-radius: var(--radius-1);
+    color: var(--clr-gray-900);
+}

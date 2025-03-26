@@ -1,0 +1,242 @@
+
+
+/* Container */
+.container {
+    width: 90%;
+    margin-inline: auto;
+}
+
+.profile-pic {
+    width: 2.7rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/* Button- btn class */
+.btn {
+    display: inline-block;
+    padding: var(--padding-btn);
+    font-weight: 500;
+    border-radius: var(--radius-border);
+    cursor: pointer;
+    transition: all .3s ease;
+    font-size: 0.9rem;
+    text-align: center;
+    color: var(--clr-dark);
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn-primary {
+    background: var(--clr-primary);
+    color: white;
+}
+
+.text-bold {
+    font-weight: 500;
+}
+
+.text-muted {
+    color: var(--clr-gray);
+}
+
+
+/* Searchbar */
+.searchbar {
+    background: var(--clr-light);
+    border-radius: var(--radius-border);
+    padding: var(--padding-search);
+    border: 1px solid var(--clr-gray);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.searchbar input[type="search"] {
+    width: 100%;
+    color: var(--clr-dark);
+    font-size: 0.9rem;
+}
+
+.searchbar input[type="search"]::placeholder {
+    color: var(--clr-gray);
+}
+
+
+/* RESPONSIVE DESIGN */
+/* MEDIA QUERIES -- SMALL LAPTOPS & BIG TABLETS */
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+
+    main .container {
+        grid-template-columns: 4.5rem auto 25vw;
+        gap: 1rem;
+    }
+
+    .main__left {
+        width: 4.5rem;
+        z-index: 100;
+    }
+
+    .main__left .profile {
+        display: none;
+    }
+
+    .sidebar h3 {
+        display: none;
+    }
+
+    .main__left .btn {
+        display: none;
+    }
+
+    .sidebar {
+        justify-content: space-between;
+        height: 85vh;
+    }
+
+    .main__right {
+        align-self: end;
+        height: max-content;
+        /* margin-bottom: 1.5rem; */
+    }
+
+    /* Notification Popup */
+    /* .main__left .notif-popup {
+        display: block;
+    } */
+
+    .main__left .notif-popup::before {
+        display: none;
+    }
+
+       /* Theme */
+       .customize-theme .card {
+        width: 70%;
+    }
+}
+
+
+/* MEDIA QUERIES -- SMALL TABLETS & PHONES */
+
+@media screen and (max-width: 992px) {
+    .container {
+        width: 98%;
+    }
+
+    main .container {
+        grid-template-columns: 4.5rem auto 0;
+        gap: .5rem;
+    }
+
+    .main__left {
+        grid-column: 1/2;
+    }
+
+    .main__middle {
+        grid-column: 2/4;
+    }
+
+    .main__right {
+        display: none;
+    }
+
+    /* Theme */
+    .customize-theme .card {
+        width: 80%;
+    }
+
+}
+
+
+/* MEDIA QUERIES -- PHONES */
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 99%;
+    }
+
+    main .container {
+        grid-template-columns: 3rem auto 0;
+        gap: .3rem;
+    }
+
+    .main__left {
+        width: 3rem;
+        z-index: 100;
+        padding: 0;
+    }
+
+    .main__left .sidebar {
+        padding: 0.2rem;
+        border-radius: var(--radius-card2);
+    }
+
+    .main__left .sidebar svg {
+        /* width: 1rem; */
+        /* height: 1rem; */
+        margin-left: .6rem;
+    }
+
+    /* Notification Popup */
+    .main__left .notif-popup {
+        /* display: block; */
+        width: 20rem;
+    }
+
+
+    /* Navbar */
+        
+    .navbar .searchbar {
+        gap: .5rem;
+        padding: var(--padding-search2);
+    }
+
+    .navbar .searchbar input[type="search"] {
+        width: 25vw;
+        font-size: 0.8rem;
+    }
+
+    .navbar .searchbar input[type="search"]::placeholder,
+    .main__middle .create-post input[type="text"]::placeholder {
+        font-size: .7rem;
+    }
+
+
+    .navbar .create-profile {
+        gap: .5rem;
+    }
+
+    .navbar .btn {
+        padding: var(--padding-btn2);
+    }
+
+    .profile-pic {
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+
+    .navbar .profile-pic {
+        width: 2.2rem;
+    }
+
+
+    /* Middle */
+    .main__middle .create-post input[type="text"] {
+        width: 60%;
+    }
+
+    /* Theme card */
+    .customize-theme .card {
+        width: 90%;
+    }
+
+}

@@ -1,0 +1,125 @@
+
+/* MAIN 2 */
+/* .main2 {
+    position: relative;
+} */
+
+.main2 .rotate-img {
+    /* border: 1px solid slateblue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main2 .rotate-img img {
+    width: 20rem;
+    aspect-ratio: 1/1;
+}
+
+.main2 > h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-block: 1rem;
+}
+
+
+/* Main 2 Content */
+.main2__content,
+.main4__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.main2__content div,
+.main4__content div {
+    /* border: 1px solid slateblue; */
+    width: 18rem;
+    height: auto;
+}
+
+.main2__content div:nth-of-type(1),
+.main2__content div:nth-of-type(3),
+.main4__content div:nth-of-type(1),
+.main4__content div:nth-of-type(3) {
+    justify-self: start;
+    align-self: center;
+}
+
+.main2__content div:nth-of-type(2),
+.main4__content div:nth-of-type(2) {
+    justify-self: end;
+    align-self: center;
+}
+
+.main2__content p,
+.main4__content p {
+    align-self: start;
+    justify-self: center;
+
+    font-size: 0.9rem;
+}
+
+
+
+/* Main Caps */
+.main__caps {
+    overflow: hidden;
+}
+
+.main__caps > *{
+    /* border: 1px solid slateblue; */
+    font-size: 3rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    transform: translateX(-20%);
+    /* text-align: center; */
+}
+
+.main__caps > *:nth-child(2) {
+    margin-left: 6rem;
+}
+.main__caps > *:nth-child(3) {
+    margin-left: 12rem;
+}
+.main__caps > *:nth-child(4) {
+    margin-left: 18rem;
+}
+.main__caps > *:nth-child(5) {
+    margin-left: 24rem;
+}
+
+.main__caps > *:nth-child(5) svg {
+    width: 5rem;
+    height: 5rem;
+}
+
+
+
+/* MAIN 3 */
+.main3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 40rem;
+    gap: 2rem;
+
+    /* overflow: hidden; */
+}
+
+.main3 > *:nth-child(1) {
+    justify-self: center;
+    align-self: start;
+}
+
+.main3 > *:nth-child(2) {
+    justify-self: center;
+    align-self: center;
+}
+
+.main3 > *:nth-child(3) {
+    justify-self: center;
+    align-self: end;
+}

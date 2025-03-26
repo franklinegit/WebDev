@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    background: transparent;
+    border: none;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: slategrey;
+    /* padding: 3% 5%; */
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+.container {
+    min-height: 100vh;
+}
+
+
+.box-1,
+.box-5,
+.box-6,
+.box-7 {
+    width: 5rem;
+    aspect-ratio: 1/1;
+    background: seagreen;
+    display: grid;
+    place-items: center;
+    z-index: 1;
+    /* margin-block: 2rem; */
+}
+
+/* .spacer {
+    margin: 5rem;
+} */
+
+.circle,
+.circle-6 {
+    width: 5rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: hotpink;
+    display: grid;
+    place-items: center;
+}
+
+.circle-1 {
+    width: 5rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: silver;
+    display: grid;
+    place-items: center;
+}
+
+.circle-1,
+.box-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.cont-1 {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 2rem;
+}
+
+.slider,
+.slider1,
+.slider2 {
+    width: 100%;
+    /* background: red; */
+}
+
+.progress {
+    height: .5rem;
+    width: 0%;
+    background: seagreen;
+}
+
+.label {
+    text-align: center;
+}
+
+.cont-2 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 10px;
+}
+
+/* Cont 3 */
+.cont-3 {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 30px;
+    margin: auto;
+}
+
+.revert-btn {
+    padding: 10px;
+    border: 2px solid red;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.box-3 {
+    width: 5rem;
+    aspect-ratio: 1/1;
+    background: yellow;
+}
+
+
+/* Cont 4 */
+.cont-4 {
+    position: relative;
+}
+
+.circle-4,
+.circle-5 {
+    width: 5rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: red;
+}
+
+.box-4 {
+    width: 5rem;
+    aspect-ratio: 1/1;
+    background: green;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+/* Cont 5 */
+.tl-btns {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-block: 1rem;
+}
+
+.btn {
+    font-size: 2rem;
+    background: blue;
+    padding: .3rem 1rem;
+}

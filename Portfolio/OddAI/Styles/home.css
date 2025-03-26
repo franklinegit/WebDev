@@ -1,0 +1,225 @@
+/* HOME PAGE */
+.home-page {
+    position: relative;
+    /* border: 1px solid red; */
+}
+
+.home-page::before {
+    content: "";
+    width: 80%;
+    height: 200%;
+    position: absolute;
+    left: -60%;
+    top: 0;
+    border-radius: 50%;
+    background-image: radial-gradient(
+        var(--clr-black) 45%,
+        var(--clr-primary1-light)
+    );
+    /* filter: blur(5px); */
+
+    z-index: -1;
+}
+
+.home-page::after {
+    content: "";
+    width: 80%;
+    height: 200%;
+    position: absolute;
+    right: -60%;
+    top: 0;
+    border-radius: 50%;
+    background-image: radial-gradient(
+        var(--clr-black) 45%,
+        var(--clr-primary1-light)
+    );
+    /* filter: blur(30px); */
+
+    z-index: -1;
+}
+
+
+/* HEADER */
+header {
+    position: sticky;
+    top: 0;
+
+    z-index: 100;
+}
+
+header .container {
+    padding: 0;
+}
+
+/* NAVBAR */
+.navbar {
+    border: 1px solid var(--clr-gray2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: var(--padding-btn);
+    border-radius: var(--radius-card);
+
+    backdrop-filter: blur(30px);
+    /* background-image: linear-gradient(
+        var(--clr-gray1),
+        var(--clr-gray1)
+    ); */
+
+    /* background-image: linear-gradient(
+        rgba(249, 92, 1, .1),
+        rgba(249, 92, 1, .1)
+    ); */
+}
+
+
+/* LOGO */
+.navbar .logo-box {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.navbar .logo-box i {
+    display: grid;
+    place-items: center;
+}
+
+.navbar .logo-box i svg {
+    width: 1.7rem;
+    height: 1.7rem;
+    fill: var(--clr-primary1);
+}
+
+.navbar .logo-box h3 span {
+    color: var(--clr-primary1);
+}
+
+
+/* NAV */
+.navbar nav {
+    /* border: 1px solid slateblue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.navbar nav .nav-btn {
+    color: var(--clr-white);
+    position: relative;
+    padding-block: .3rem;
+}
+
+.navbar nav .nav-btn::before {
+    content: "";
+    width: 100%;
+    height: .2rem;
+    background: var(--clr-white);
+    /* background: var(--clr-primary1); */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: var(--radius-card);
+
+    transform: scaleX(0);
+    transform-origin: right;
+
+    transition: transform .3s ease;
+}
+
+.navbar nav .nav-btn:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Login Button */
+.navbar .login {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.login-btn {
+    color: var(--clr-white);
+    background: transparent;
+    /* border: 1px solid var(--clr-white); */
+    padding: .2rem 1rem;
+}
+
+
+/* HOME CONTENT */
+.home__content .container {
+    min-height: 70vh;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.home__content .blackFriday {
+    border: 1px solid var(--clr-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    /* width: 30%; */
+    margin-bottom: 1.5rem;
+    padding: var(--padding-btn2);
+    border-radius: var(--radius-card);
+}
+
+.home__content .blackFriday .btn {
+    padding: var(--padding-btn2);
+    font-size: .85rem;
+    font-weight: bold;
+}
+
+.home__content .blackFriday span {
+    font-size: .7rem;
+}
+
+.home__content .container > h1 {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.home__content .container > p {
+    text-align: center;
+    font-size: .8rem;
+    margin-bottom: 2rem;
+}
+
+/* Sign up Form */
+.home__content .container .sign-up-form {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.home__content .container .sign-up-form input[type="email"] {
+    padding: var(--padding-btn);
+    border-radius: var(--radius-card);
+    color: var(--clr-white);
+    width: 20vw;
+    border: 1px solid var(--clr-gray2);
+}
+
+.home__content .container > .text-muted {
+    font-size: .7rem;
+}
+
+.home__content .container > .text-muted span a{
+    text-decoration: underline;
+    color: var(--clr-white);
+    font-weight: bold;
+    transition: var(--transition);
+}
+
+.home__content .container > .text-muted span a:hover {
+    color: var(--clr-primary1);
+}

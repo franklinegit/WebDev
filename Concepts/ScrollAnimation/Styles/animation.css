@@ -1,0 +1,120 @@
+
+/* ANIMATIONS */
+
+.autoSpin {
+    animation: autoSpin;
+    animation-timeline: view();
+}
+
+.autoShow {
+    animation: autoShow both;
+    animation-timeline: view(70% 5%);
+}
+
+.slideRight {
+    animation: slideRight both;
+    animation-timeline: view(90% auto);
+}
+
+.autoBlur {
+    animation: autoBlur linear both;
+    animation-timeline: view();
+}
+
+/* .main3:nth-child(1) {
+    animation-delay: .2s;
+}
+.main3:nth-child(2) {
+    animation-delay: .4s;
+}
+.main3:nth-child(3) {
+    animation-delay: .6s;
+} */
+
+@keyframes autoSpin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes autoShow {
+    from {
+        opacity: 0;
+        filter: blur(10px);
+        transform: translateY(100px) scale(.3);
+    }
+
+    to {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0) scale(1);
+    }
+}
+
+
+@keyframes slideRight {
+    from {
+        opacity: 0;
+        filter: blur(10px);
+        transform: translateX(-100%) scale(.3);
+    }
+
+    to {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0) scale(1);
+    }
+}
+
+
+@keyframes autoBlur {
+    0% {
+        filter: blur(5px);
+    }
+
+    45%, 55% {
+        filter: blur(0);
+    }
+
+    100% {
+        filter: blur(5px);
+    }
+}
+
+
+
+/* Intersection Observer with hidden and show classes */
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+@media (prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.card:nth-child(2) {
+    transition-delay: .2s;
+}
+.card:nth-child(3) {
+    transition-delay: .4s;
+}
+.card:nth-child(4) {
+    transition-delay: .6s;
+}

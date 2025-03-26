@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OddSocial Social Media Website</title>
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="./Styles/styles.css">
+    <!-- <link rel="stylesheet" href="./Styles/utils.css"> -->
+    <link rel="stylesheet" href="./Styles/nav-mainLeft.css">
+    <link rel="stylesheet" href="./Styles/mainMiddle.css">
+    <link rel="stylesheet" href="./Styles/mainRight.css">
+    <link rel="stylesheet" href="./Styles/utils.css">
+
+    
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container">
+            <h2 class="logo">Odd<span>Social</span></h2>
+
+            <div class="searchbar">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+                <input type="search" placeholder="Search for creators, inspirations, stories...">
+            </div>
+
+            <div class="create-profile">
+                <div class="create">
+                    <label for="create-post" class="btn btn-primary">Create</label>
+                </div>
+
+                <div class="profile-pic">
+                    <img src="./Images/mypicture.png" alt="" loading="lazy">
+                </div>
+            </div>
+
+
+        </div>
+    </nav>
+
+
+    <!-- MAIN SECTION -->
+     <main>
+
+        <div class="container">
+
+            <!-- MAIN LEFT -->
+            <section class="main__left">
+
+                <!-- PROFILE -->
+                <a class="profile">
+                    <div class="profile-pic">
+                        <img src="./Images/mypicture.png" alt="" loading="lazy">
+                    </div>
+                    <div class="handle">
+                        <h4>Franko Dev</h4>
+                        <p class="text-muted">@odd_dev</p>
+                    </div>
+                </a>
+
+
+                <!-- SIDEBAR -->
+                <div class="sidebar">
+                    <a class="menu-item active">
+                        <span><i><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg></i></span>
+                        <h3>Home</h3>
+                    </a>
+
+                    <a class="menu-item">
+                        <span><i><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m300-300 280-80 80-280-280 80-80 280Zm180-120q-25 0-42.5-17.5T420-480q0-25 17.5-42.5T480-540q25 0 42.5 17.5T540-480q0 25-17.5 42.5T480-420Zm0 340q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Zm0-320Z"/></svg></i></span>
+                        <h3>Explore</h3>
+                    </a>
+
+                    <a class="menu-item" id="notifications">
+                        <span><i><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M160-200v-80h80v-280q0-83 50-147.5T420-792v-28q0-25 17.5-42.5T480-880q25 0 42.5 17.5T540-820v28q80 20 130 84.5T720-560v280h80v80H160Zm320-300Zm0 420q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80ZM320-280h320v-280q0-66-47-113t-113-47q-66 0-113 47t-47 113v280Z"/></svg><small class="notif-count">3+</small></i></span>
+                        <h3>Notification</h3>
+
+                        <!-- Notification Pop-up -->
+                        <div class="notif-popup">
+                            <div class="notif">
+                                <div class="profile-pic">
+                                    <img src="./Images/notifProfile1.jpg" alt="" loading="lazy">
+                                </div>
+                                <div class="notif-body">
+                                    <b>Johnie Walker</b> accepted your friend request
+                                    <small class="text-muted">2 HOURS AGO</small>
+                                </div>
+                            </div>
+
+
+                            <div class="notif">
+                                <div class="profile-pic">
+                                    <img src="./Images/feedPhoto3.jpg" alt="" loading="lazy">
+                                </div>
+                                <div class="notif-body">
+                                    <b>Neon Kelly</b> commented on your post
+                                    <small class="text-muted">4 HOURS AGO</small>
+                                </div>
+                            </div>
+
+
+                            <div class="notif">
+                                <div class="profile-pic">
+                                    <img src="./Images/likedProfile1.jpg" alt="" loading="lazy">
+                                </div>
+                                <div class="notif-body">
+                                    <b>Pole Palmer</b> commented on a post you're tagged on
+                                    <small class="text-muted">13 HOURS AGO</small>
+                                </div>
+                            </div>
+
+
+                            <div class="notif">
+                                <div class="profile-pic">
+                                    <img src="./Images/likedProfile3.jpg" alt="" loading="lazy">
+                                </div>
+                                <div class="notif-body">
+                                    <b>Nico Jack</b> accepted your friend request
+                                    <small class="text-muted">3 DAYS AGO</small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="menu-item" id="messages-notifs">
+                        <span><i><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg><small class="notif-count">6</small></i></span>
+                        <h3>Message</h3>
+                    </a>
+
+                    <a class="menu-item">
+                        <span><i><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M200-120v-640q0-33 23.5-56.5T280-840h400q33 0 56.5 23.5T760-760v640L480-240 200-120Zm80-122 200-86 200 86v-518H280v518Zm0-518h400-400Z"/></svg></i></span>
+                        <h3>Bookmarks</h3>
+                    </a>
+
+                    <a class="menu-item">
+                        <span><i><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M120-120v-80l80-80v160h-80Zm160 0v-240l80-80v320h-80Zm160 0v-320l80 81v239h-80Zm160 0v-239l80-80v319h-80Zm160 0v-400l80-80v480h-80ZM120-327v-113l280-280 160 160 280-280v113L560-447 400-607 120-327Z"/></svg></i></span>
+                        <h3>Analytics</h3>
+                    </a>
+
+                    <a class="menu-item" id="theme">
+                        <span><i><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"/></svg></i></span>
+                        <h3>Theme</h3>
+                    </a>
+
+                    <a class="menu-item">
+                        <span><i><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m370-80-16-128q-13-5-24.5-12T307-235l-119 50L78-375l103-78q-1-7-1-13.5v-27q0-6.5 1-13.5L78-585l110-190 119 50q11-8 23-15t24-12l16-128h220l16 128q13 5 24.5 12t22.5 15l119-50 110 190-103 78q1 7 1 13.5v27q0 6.5-2 13.5l103 78-110 190-118-50q-11 8-23 15t-24 12L590-80H370Zm70-80h79l14-106q31-8 57.5-23.5T639-327l99 41 39-68-86-65q5-14 7-29.5t2-31.5q0-16-2-31.5t-7-29.5l86-65-39-68-99 42q-22-23-48.5-38.5T533-694l-13-106h-79l-14 106q-31 8-57.5 23.5T321-633l-99-41-39 68 86 64q-5 15-7 30t-2 32q0 16 2 31t7 30l-86 65 39 68 99-42q22 23 48.5 38.5T427-266l13 106Zm42-180q58 0 99-41t41-99q0-58-41-99t-99-41q-59 0-99.5 41T342-480q0 58 40.5 99t99.5 41Zm-2-140Z"/></svg></i></span>
+                        <h3>Settings</h3>
+                    </a>
+
+                </div>
+
+                <label for="create-post" class="btn btn-primary">Create Post</label>
+
+            </section>
+
+
+
+            <!-- MAIN MIDDLE -->
+            <section class="main__middle">
+
+                <!-- STORIES -->
+                <div class="stories">
+                    <div class="story">
+                        <div class="profile-pic">
+                            <img src="./Images/storiesProfile1.jpg" alt="" loading="lazy">
+                        </div>
+                        <p class="name">Your Story</p>
+                    </div>
+                    
+
+                    <div class="story">
+                        <div class="profile-pic">
+                            <img src="./Images/storiesProfile1.jpg" alt="" loading="lazy">
+                        </div>
+                        <p class="name">Leandro T</p>
+                    </div>
+
+
+                    <div class="story">
+                        <div class="profile-pic">
+                            <img src="./Images/storiesProfile1.jpg" alt="" loading="lazy">
+                        </div>
+                        <p class="name">Vitinha</p>
+                    </div>
+
+
+                    <div class="story">
+                        <div class="profile-pic">
+                            <img src="./Images/storiesProfile1.jpg" alt="" loading="lazy">
+                        </div>
+                        <p class="name">James R</p>
+                    </div>
+
+
+                    <div class="story">
+                        <div class="profile-pic">
+                            <img src="./Images/storiesProfile1.jpg" alt="" loading="lazy">
+                        </div>
+                        <p class="name">Lillian White</p>
+                    </div>
+
+
+                    <div class="story">
+                        <div class="profile-pic">
+                            <img src="./Images/storiesProfile1.jpg" alt="" loading="lazy">
+                        </div>
+                        <p class="name">Asha D</p>
+                    </div>
+
+                </div>
+
+                <!-- CREATE POST -->
+                <form class="create-post">
+                    <div class="profile-pic">
+                        <img src="./Images/mypicture.png" alt="" loading="lazy">
+                    </div>
+                    <input type="text" placeholder="What's on your mind, Franko?" id="create-post">
+                    <input type="submit" value="Post" class="btn btn-primary">
+                </form>
+
+
+                <!-- FEEDS -->
+                <div class="feeds">
+
+                    <!-- Feed1 -->
+                    <div class="feed">
+
+                        <!-- Head -->
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-pic">
+                                    <img src="./Images/feedProfile1.jpg" alt="" loading="lazy">
+                                </div>
+
+                                <div class="info">
+                                    <h3>Troy Lemar</h3>
+                                    <small>California, 12 MINUTES AGO</small>
+                                </div>
+
+                            </div>
+
+                            <span class="edit">
+                                <i><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"/></svg></i>
+                            </span>
+                        </div>
+
+                        <!-- Post -->
+                        <div class="photo">
+                            <img src="./Images/likedProfile1.jpg" alt="" loading="lazy">
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span class="like-btn"><i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg>
+                                </i></span>
+                                    
+                                <span class="comment-btn"><i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M240-400h320v-80H240v80Zm0-120h480v-80H240v80Zm0-120h480v-80H240v80ZM80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z"/></svg>
+                                </i></span>
+
+                                <span class="share-btn"><i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M680-80q-50 0-85-35t-35-85q0-6 3-28L282-392q-16 15-37 23.5t-45 8.5q-50 0-85-35t-35-85q0-50 35-85t85-35q24 0 45 8.5t37 23.5l281-164q-2-7-2.5-13.5T560-760q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35q-24 0-45-8.5T598-672L317-508q2 7 2.5 13.5t.5 14.5q0 8-.5 14.5T317-452l281 164q16-15 37-23.5t45-8.5q50 0 85 35t35 85q0 50-35 85t-85 35Zm0-80q17 0 28.5-11.5T720-200q0-17-11.5-28.5T680-240q-17 0-28.5 11.5T640-200q0 17 11.5 28.5T680-160ZM200-440q17 0 28.5-11.5T240-480q0-17-11.5-28.5T200-520q-17 0-28.5 11.5T160-480q0 17 11.5 28.5T200-440Zm480-280q17 0 28.5-11.5T720-760q0-17-11.5-28.5T680-800q-17 0-28.5 11.5T640-760q0 17 11.5 28.5T680-720Zm0 520ZM200-480Zm480-280Z"/></svg>
+                                </i></span>
+
+                            </div>
+
+                            <div class="bookmark">
+                                <span class="boorkmark-btn"><i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M200-120v-640q0-33 23.5-56.5T280-840h400q33 0 56.5 23.5T760-760v640L480-240 200-120Zm80-122 200-86 200 86v-518H280v518Zm0-518h400-400Z"/></svg>
+                                </i></span>
+                            </div>
+                        </div>
+
+                        <!-- Liked By -->
+                         <div class="liked-by">
+                            <span><img src="./Images/likedProfile1.jpg" alt="" loading="lazy"></span>
+
+                            <span><img src="./Images/likedProfile2.jpg" alt="" loading="lazy"></span>
+
+                            <span><img src="./Images/likedProfile3.jpg" alt="" loading="lazy"></span>
+
+                            <p>
+                                Liked by <b>Jesus Navas</b> and <b>352 others.</b>
+                            </p>
+                        </div>
+
+                        <!-- Caption -->
+                        <div class="caption">
+                            <p>
+                                <b>Troy Lemar</b> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <!-- Hash-Tag -->
+                                <span class="hash-tag"><b>#</b>Aviation</span>
+                            </p>
+                        </div>
+
+                        <div class=" comments text-muted">
+                            View all 74 comments
+                        </div>
+
+                    </div>
+
+
+                    <!-- Feed2 -->
+                    <div class="feed">
+
+                        <!-- Head -->
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-pic">
+                                    <img src="./Images/feedPhoto1.jpg" alt="" loading="lazy">
+                                </div>
+
+                                <div class="info">
+                                    <h3>Dillon Danis</h3>
+                                    <small>Utah, 15 MINUTES AGO</small>
+                                </div>
+
+                            </div>
+
+                            <span class="edit">
+                                <i><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"/></svg></i>
+                            </span>
+                        </div>
+
+                        <!-- Post -->
+                        <div class="photo">
+                            <img src="./Images/feedPhoto2.jpg" alt="" loading="lazy">
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span class="like-btn"><i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg>
+                                </i></span>
+                                    
+                                <span class="comment-btn"><i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M240-400h320v-80H240v80Zm0-120h480v-80H240v80Zm0-120h480v-80H240v80ZM80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z"/></svg>
+                                </i></span>
+
+                                <span class="share-btn"><i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M680-80q-50 0-85-35t-35-85q0-6 3-28L282-392q-16 15-37 23.5t-45 8.5q-50 0-85-35t-35-85q0-50 35-85t85-35q24 0 45 8.5t37 23.5l281-164q-2-7-2.5-13.5T560-760q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35q-24 0-45-8.5T598-672L317-508q2 7 2.5 13.5t.5 14.5q0 8-.5 14.5T317-452l281 164q16-15 37-23.5t45-8.5q50 0 85 35t35 85q0 50-35 85t-85 35Zm0-80q17 0 28.5-11.5T720-200q0-17-11.5-28.5T680-240q-17 0-28.5 11.5T640-200q0 17 11.5 28.5T680-160ZM200-440q17 0 28.5-11.5T240-480q0-17-11.5-28.5T200-520q-17 0-28.5 11.5T160-480q0 17 11.5 28.5T200-440Zm480-280q17 0 28.5-11.5T720-760q0-17-11.5-28.5T680-800q-17 0-28.5 11.5T640-760q0 17 11.5 28.5T680-720Zm0 520ZM200-480Zm480-280Z"/></svg>
+                                </i></span>
+
+                            </div>
+
+                            <div class="bookmark">
+                                <span class="boorkmark-btn"><i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M200-120v-640q0-33 23.5-56.5T280-840h400q33 0 56.5 23.5T760-760v640L480-240 200-120Zm80-122 200-86 200 86v-518H280v518Zm0-518h400-400Z"/></svg>
+                                </i></span>
+                            </div>
+                        </div>
+
+                        <!-- Liked By -->
+                         <div class="liked-by">
+                            <span><img src="./Images/likedProfile1.jpg" alt="" loading="lazy"></span>
+
+                            <span><img src="./Images/likedProfile2.jpg" alt="" loading="lazy"></span>
+
+                            <span><img src="./Images/likedProfile3.jpg" alt="" loading="lazy"></span>
+
+                            <p>
+                                Liked by <b>Napoleon III</b> and <b>452 others.</b>
+                            </p>
+                        </div>
+
+                        <!-- Caption -->
+                        <div class="caption">
+                            <p>
+                                <b>Dillon Danis</b> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <!-- Hash-Tag -->
+                                <span class="hash-tag"><b>#</b>Nature</span>
+                            </p>
+                        </div>
+
+                        <div class=" comments text-muted">
+                            View all 12 comments
+                        </div>
+
+                    </div>
+
+
+                    <!-- Feed3 -->
+                    <div class="feed">
+
+                        <!-- Head -->
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-pic">
+                                    <img src="./Images/feedProfile2.jpg" alt="" loading="lazy">
+                                </div>
+
+                                <div class="info">
+                                    <h3>Jusam De Villiar</h3>
+                                    <small>Tokyo, Japan, 54 MINUTES AGO</small>
+                                </div>
+
+                            </div>
+
+                            <span class="edit">
+                                <i><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"/></svg></i>
+                            </span>
+                        </div>
+
+                        <!-- Post -->
+                        <div class="photo">
+                            <img src="./Images/feedProfile2.jpg" alt="" loading="lazy">
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span class="like-btn"><i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg>
+                                </i></span>
+                                    
+                                <span class="comment-btn"><i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M240-400h320v-80H240v80Zm0-120h480v-80H240v80Zm0-120h480v-80H240v80ZM80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z"/></svg>
+                                </i></span>
+
+                                <span class="share-btn"><i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M680-80q-50 0-85-35t-35-85q0-6 3-28L282-392q-16 15-37 23.5t-45 8.5q-50 0-85-35t-35-85q0-50 35-85t85-35q24 0 45 8.5t37 23.5l281-164q-2-7-2.5-13.5T560-760q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35q-24 0-45-8.5T598-672L317-508q2 7 2.5 13.5t.5 14.5q0 8-.5 14.5T317-452l281 164q16-15 37-23.5t45-8.5q50 0 85 35t35 85q0 50-35 85t-85 35Zm0-80q17 0 28.5-11.5T720-200q0-17-11.5-28.5T680-240q-17 0-28.5 11.5T640-200q0 17 11.5 28.5T680-160ZM200-440q17 0 28.5-11.5T240-480q0-17-11.5-28.5T200-520q-17 0-28.5 11.5T160-480q0 17 11.5 28.5T200-440Zm480-280q17 0 28.5-11.5T720-760q0-17-11.5-28.5T680-800q-17 0-28.5 11.5T640-760q0 17 11.5 28.5T680-720Zm0 520ZM200-480Zm480-280Z"/></svg>
+                                </i></span>
+
+                            </div>
+
+                            <div class="bookmark">
+                                <span class="boorkmark-btn"><i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M200-120v-640q0-33 23.5-56.5T280-840h400q33 0 56.5 23.5T760-760v640L480-240 200-120Zm80-122 200-86 200 86v-518H280v518Zm0-518h400-400Z"/></svg>
+                                </i></span>
+                            </div>
+                        </div>
+
+                        <!-- Liked By -->
+                         <div class="liked-by">
+                            <span><img src="./Images/likedProfile1.jpg" alt="" loading="lazy"></span>
+
+                            <span><img src="./Images/likedProfile2.jpg" alt="" loading="lazy"></span>
+
+                            <span><img src="./Images/likedProfile3.jpg" alt="" loading="lazy"></span>
+
+                            <p>
+                                Liked by <b>Zerbius Neco</b> and <b>261 others.</b>
+                            </p>
+                        </div>
+
+                        <!-- Caption -->
+                        <div class="caption">
+                            <p>
+                                <b>Jusam De Villiar</b> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <!-- Hash-Tag -->
+                                <span class="hash-tag"><b>#</b>Cars</span>
+                            </p>
+                        </div>
+
+                        <div class=" comments text-muted">
+                            View all 53 comments
+                        </div>
+
+                    </div>
+
+
+                    
+                    <!-- Feed4 -->
+                    <div class="feed">
+
+                        <!-- Head -->
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-pic">
+                                    <img src="./Images/feedProfile3.jpg" alt="" loading="lazy">
+                                </div>
+
+                                <div class="info">
+                                    <h3>Adolf H</h3>
+                                    <small>Berlin, 2 HOURS AGO</small>
+                                </div>
+
+                            </div>
+
+                            <span class="edit">
+                                <i><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"/></svg></i>
+                            </span>
+                        </div>
+
+                        <!-- Post -->
+                        <div class="photo">
+                            <img src="./Images/feedPhoto4.jpg" alt="" loading="lazy">
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span class="like-btn"><i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg>
+                                </i></span>
+                                    
+                                <span class="comment-btn"><i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M240-400h320v-80H240v80Zm0-120h480v-80H240v80Zm0-120h480v-80H240v80ZM80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z"/></svg>
+                                </i></span>
+
+                                <span class="share-btn"><i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M680-80q-50 0-85-35t-35-85q0-6 3-28L282-392q-16 15-37 23.5t-45 8.5q-50 0-85-35t-35-85q0-50 35-85t85-35q24 0 45 8.5t37 23.5l281-164q-2-7-2.5-13.5T560-760q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35q-24 0-45-8.5T598-672L317-508q2 7 2.5 13.5t.5 14.5q0 8-.5 14.5T317-452l281 164q16-15 37-23.5t45-8.5q50 0 85 35t35 85q0 50-35 85t-85 35Zm0-80q17 0 28.5-11.5T720-200q0-17-11.5-28.5T680-240q-17 0-28.5 11.5T640-200q0 17 11.5 28.5T680-160ZM200-440q17 0 28.5-11.5T240-480q0-17-11.5-28.5T200-520q-17 0-28.5 11.5T160-480q0 17 11.5 28.5T200-440Zm480-280q17 0 28.5-11.5T720-760q0-17-11.5-28.5T680-800q-17 0-28.5 11.5T640-760q0 17 11.5 28.5T680-720Zm0 520ZM200-480Zm480-280Z"/></svg>
+                                </i></span>
+
+                            </div>
+
+                            <div class="bookmark">
+                                <span class="boorkmark-btn"><i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M200-120v-640q0-33 23.5-56.5T280-840h400q33 0 56.5 23.5T760-760v640L480-240 200-120Zm80-122 200-86 200 86v-518H280v518Zm0-518h400-400Z"/></svg>
+                                </i></span>
+                            </div>
+                        </div>
+
+                        <!-- Liked By -->
+                         <div class="liked-by">
+                            <span><img src="./Images/likedProfile1.jpg" alt="" loading="lazy"></span>
+
+                            <span><img src="./Images/likedProfile2.jpg" alt="" loading="lazy"></span>
+
+                            <span><img src="./Images/likedProfile3.jpg" alt="" loading="lazy"></span>
+
+                            <p>
+                                Liked by <b>Von Hindenburg</b> and <b>3,690 others.</b>
+                            </p>
+                        </div>
+
+                        <!-- Caption -->
+                        <div class="caption">
+                            <p>
+                                <b>Adolf H</b> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <!-- Hash-Tag -->
+                                <span class="hash-tag"><b>#</b>Philosophy</span>
+                            </p>
+                        </div>
+
+                        <div class=" comments text-muted">
+                            View all 543 comments
+                        </div>
+
+                    </div>
+
+
+                    <!-- Feed5 -->
+                    <div class="feed">
+
+                        <!-- Head -->
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-pic">
+                                    <img src="./Images/feedProfile4.jpg" alt="" loading="lazy">
+                                </div>
+
+                                <div class="info">
+                                    <h3>Anon</h3>
+                                    <small>Anonymous, 6 HOURS AGO</small>
+                                </div>
+
+                            </div>
+
+                            <span class="edit">
+                                <i><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"/></svg></i>
+                            </span>
+                        </div>
+
+                        <!-- Post -->
+                        <div class="photo">
+                            <img src="./Images/feedProfile4.jpg" alt="" loading="lazy">
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span class="like-btn"><i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg>
+                                </i></span>
+                                    
+                                <span class="comment-btn"><i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M240-400h320v-80H240v80Zm0-120h480v-80H240v80Zm0-120h480v-80H240v80ZM80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z"/></svg>
+                                </i></span>
+
+                                <span class="share-btn"><i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M680-80q-50 0-85-35t-35-85q0-6 3-28L282-392q-16 15-37 23.5t-45 8.5q-50 0-85-35t-35-85q0-50 35-85t85-35q24 0 45 8.5t37 23.5l281-164q-2-7-2.5-13.5T560-760q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35q-24 0-45-8.5T598-672L317-508q2 7 2.5 13.5t.5 14.5q0 8-.5 14.5T317-452l281 164q16-15 37-23.5t45-8.5q50 0 85 35t35 85q0 50-35 85t-85 35Zm0-80q17 0 28.5-11.5T720-200q0-17-11.5-28.5T680-240q-17 0-28.5 11.5T640-200q0 17 11.5 28.5T680-160ZM200-440q17 0 28.5-11.5T240-480q0-17-11.5-28.5T200-520q-17 0-28.5 11.5T160-480q0 17 11.5 28.5T200-440Zm480-280q17 0 28.5-11.5T720-760q0-17-11.5-28.5T680-800q-17 0-28.5 11.5T640-760q0 17 11.5 28.5T680-720Zm0 520ZM200-480Zm480-280Z"/></svg>
+                                </i></span>
+
+                            </div>
+
+                            <div class="bookmark">
+                                <span class="boorkmark-btn"><i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M200-120v-640q0-33 23.5-56.5T280-840h400q33 0 56.5 23.5T760-760v640L480-240 200-120Zm80-122 200-86 200 86v-518H280v518Zm0-518h400-400Z"/></svg>
+                                </i></span>
+                            </div>
+                        </div>
+
+                        <!-- Liked By -->
+                         <div class="liked-by">
+                            <span><img src="./Images/likedProfile1.jpg" alt="" loading="lazy"></span>
+
+                            <span><img src="./Images/likedProfile2.jpg" alt="" loading="lazy"></span>
+
+                            <span><img src="./Images/likedProfile3.jpg" alt="" loading="lazy"></span>
+
+                            <p>
+                                Liked by <b>Local-host 127.0.0...</b> and <b>12,674 others.</b>
+                            </p>
+                        </div>
+
+                        <!-- Caption -->
+                        <div class="caption">
+                            <p>
+                                <b>Anon</b> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <!-- Hash-Tag -->
+                                <span class="hash-tag"><b>#</b>Legion</span>
+                            </p>
+                        </div>
+
+                        <div class=" comments text-muted">
+                            View all 186 comments
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- ======= END OF FEEDS ====== -->
+
+
+            </section>
+            <!-- ======= END OF MIDDLE SECTION ====== -->
+
+
+
+            <!-- MAIN RIGHT -->
+            <section class="main__right">
+
+                <!-- MESSAGES -->
+                <div class="messages">
+                    <div class="heading">
+                        <h4>Messages</h4>
+                        <i>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z"/></svg>
+                        </i>
+                    </div>
+
+                    <!-- Searchbar -->
+                    <div class="searchbar">
+                        <i>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+                        </i>
+                        <input type="search" placeholder="Search Messages" id="message-search">
+                    </div>
+
+                    <!-- Message Categories -->
+                    <div class="category">
+                        <h6 class="active">Primary</h6>
+                        <h6>General</h6>
+                        <h6 class="message-requests">Requests(7)</h6>
+                    </div>
+
+                    <!-- Message 1 -->
+                    <div class="message">
+                        <div class="profile-pic">
+                            <img src="./Images/messageProfile1.jpg" alt="" loading="lazy">
+                        </div>
+
+                        <div class="message-body">
+                            <h5>Grisho Sean</h5>
+                            <p class="text-bold">Bro, Mellisa is gnna murder you.</p>
+                        </div>
+                    </div>
+
+
+                    <!-- Message 2 -->
+                    <div class="message">
+                        <div class="profile-pic">
+                            <img src="./Images/messageProfile1.jpg" alt="" loading="lazy">
+                            <div class="active"></div>
+                        </div>
+
+                        <div class="message-body">
+                            <h5>Mellisa Jones</h5>
+                            <p class="text-bold">Please tell me you're kidding.</p>
+                        </div>
+                    </div>
+
+
+                    <!-- Message 3 -->
+                    <div class="message">
+                        <div class="profile-pic">
+                            <img src="./Images/messageProfile1.jpg" alt="" loading="lazy">
+                            <div class="active"></div>
+                        </div>
+
+                        <div class="message-body">
+                            <h5>Joey Jay</h5>
+                            <p class="text-muted">Book the flight already.</p>
+                        </div>
+                    </div>
+
+
+                    <!-- Message 4 -->
+                    <div class="message">
+                        <div class="profile-pic">
+                            <img src="./Images/messageProfile1.jpg" alt="" loading="lazy">
+                        </div>
+
+                        <div class="message-body">
+                            <h5>Napoleon III</h5>
+                            <p class="text-muted">I've got everything set up.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- End of Messages -->
+
+
+                <!-- FRIEND REQUESTS -->
+                <div class="friend-requests">
+                    <h4>Requests</h4>
+                    
+                    <!-- REquest 1 -->
+                    <div class="request">
+
+                        <!-- Info -->
+                        <div class="info">
+                            <div class="profile-pic">
+                                <img src="./Images/requestProfile1.jpg" alt="" loading="lazy">
+                            </div>
+
+                            <div>
+                                <h5>Abdul Razak</h5>
+                                <p class="text-muted">
+                                    8 mutual friends
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Action Butons -->
+                        <div class="action">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn">Decline</button>
+                        </div>
+
+                    </div>
+
+
+                    <!-- REquest 2 -->
+                    <div class="request">
+
+                        <!-- Info -->
+                        <div class="info">
+                            <div class="profile-pic">
+                                <img src="./Images/requestProfile1.jpg" alt="" loading="lazy">
+                            </div>
+
+                            <div>
+                                <h5>Gervonta Davis</h5>
+                                <p class="text-muted">
+                                    2 mutual friends
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Action Butons -->
+                        <div class="action">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn">Decline</button>
+                        </div>
+
+                    </div>
+
+
+                    <!-- REquest 3 -->
+                    <div class="request">
+
+                        <!-- Info -->
+                        <div class="info">
+                            <div class="profile-pic">
+                                <img src="./Images/requestProfile1.jpg" alt="" loading="lazy">
+                            </div>
+
+                            <div>
+                                <h5>Jane Win</h5>
+                                <p class="text-muted">
+                                    6 mutual friends
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Action Butons -->
+                        <div class="action">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn">Decline</button>
+                        </div>
+
+                    </div>
+
+
+                    <!-- REquest 4 -->
+                    <div class="request">
+
+                        <!-- Info -->
+                        <div class="info">
+                            <div class="profile-pic">
+                                <img src="./Images/requestProfile1.jpg" alt="" loading="lazy">
+                            </div>
+
+                            <div>
+                                <h5>Levi J</h5>
+                                <p class="text-muted">
+                                    1 mutual friends
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Action Butons -->
+                        <div class="action">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn">Decline</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- THEME CUSTOMIZATION -->
+    <div class="customize-theme">
+
+        <div class="card">
+            <h2>Customize Your Interface</h2>
+            <p class="text-muted">Manage your font size, color, and background.</p>
+
+            <!-- FONT SIZES -->
+            <div class="font-size">
+                <h4>Font Size</h4>
+                <div>
+                    <h6>Aa</h6>
+
+                    <div class="choose-size">
+                        <span class="font-size-1"></span>
+                        <span class="font-size-2"></span>
+                        <span class="font-size-3"></span>
+                        <span class="font-size-4"></span>
+                        <span class="font-size-5"></span>
+                    </div>
+
+                    <h3>Aa</h3>
+                </div>
+            </div>
+
+            <!-- PRIMARY COLORS -->
+            <div class="color">
+                <h4>Color</h4>
+                <div class="choose-color">
+                    <span class="color-1 active"></span>
+                    <span class="color-2"></span>
+                    <span class="color-3"></span>
+                    <span class="color-4"></span>
+                    <span class="color-5"></span>
+                </div>
+            </div>
+
+            <!-- BACKGROUND COLORS -->
+            <div class="background">
+                <h4>Background</h4>
+                <div class="choose-bg">
+                    <div class="bg-1 active">
+                        <span></span>
+                        <h5 for="bg-1">Light</h5>
+                    </div>
+
+                    <div class="bg-2">
+                        <span></span>
+                        <h5 for="bg-2">Dim</h5>
+                    </div>
+
+                    <div class="bg-3">
+                        <span></span>
+                        <h5 for="bg-3">Lights Out</h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+
+    <script src="./Scripts/app.js"></script>
+</body>
+</html>

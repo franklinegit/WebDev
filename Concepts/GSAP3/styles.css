@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, 
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    background-image: url(./Images/img1.jpg);
+    background-size: cover;
+    background-position: center center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Inter;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+a {
+    all: unset;
+}
+
+/* Container */
+.container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Revealers */
+.revealers {
+    /* border: 1px solid red; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    /* opacity: 0; */
+}
+
+.revealer {
+    flex: 1;
+    width: 100%;
+    background-color: #fff;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%,  0% 100%);
+}
+
+/* Images */
+.images {
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    transform-origin: center center;
+    will-change: transform;
+}
+
+.img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.5);
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+    will-change: transform;
+    opacity: 0;
+}
+
+.img:first-child {
+    opacity: 1;
+}
+
+.images.stacked-container {
+    position: fixed;
+    left: 2rem;
+    bottom: 2rem;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 1em;
+    transform: none;
+    will-change: transform;
+}
+
+.img.stacked {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    transform: none;
+    top: auto;
+    left: auto;
+    opacity: 1;
+    will-change: transform;
+}
+
+
+/* HERO */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    position: absolute;
+    top: 2em;
+    left: 2em;
+    display: flex;
+    /* align-items: center; */
+    gap: 1em;
+}
+
+.logo h1 {
+    color: #000;
+    /* font-family: ; */
+    font-size: 5vw;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -0.01em;
+}
+
+.logo h1 sup {
+    position: absolute;
+    top: -0.125em;
+    font-size: 1.5rem;
+}
+
+/* Nav */
+.nav {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    padding: 2em;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1em;
+}
+
+.nav .nav__link a {
+    position: relative;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.cover-img {
+    position: absolute;
+    right: 2em;
+    bottom: 2em;
+    width: 40%;
+    height: 50%;
+    clip-path: polygon(0% 100%, 100% 100%, 100% 100%,  0% 100%);
+}
+
+.cover-img img {
+    /* filter: saturate(1); */
+    opacity: 1;
+    /* mix-blend-mode: difference; */
+}
+
+
+/* SITE CONTENT */
+.site-content {
+    position: absolute;
+    bottom: 2em;
+    left: 2em;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.site-content .row {
+    display: flex;
+    gap: 2em;
+}
+
+.site-content .row .col {
+    flex: 1;
+}
+
+.site-content h2 {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.25;
+}
+
+.site-content p {
+    text-transform: uppercase;
+    /* font-family: "Apercu Mono Pro"; */
+    font-size: 11px;
+    font-weight: 500;
+    color: #000;
+}
+
+.site-content .row:nth-child(2) .col:nth-child(2) {
+    display: flex;
+}
+
+.address, .socials {
+    flex: 1;
+}
+
+.address p, .socials p {
+    line-height: 1.25;
+}
+
+.logo__title,
+.nav__link,
+.line {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.logo__title h1, 
+.nav__link a,
+.site-content h2 .line span,
+.line p {
+    position: relative;
+    will-change: transform;
+}
+
+.site-content h2 .line span {
+    display: flex;
+    transform: translateY(100%);
+}
+
+.logo__title h1,
+.nav__link a,
+.line p {
+    transform: translateY(100%);
+}

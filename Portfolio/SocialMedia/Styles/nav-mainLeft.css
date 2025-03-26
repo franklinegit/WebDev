@@ -1,0 +1,234 @@
+
+/* NAVBAR */
+.navbar {
+    background: var(--clr-white);
+    width: 100%;
+    padding: 0.7rem 0;
+    position: fixed;
+    top: 0;
+    backdrop-filter: blur(20px);
+
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo span {
+    color: var(--clr-primary);
+}
+
+.navbar .searchbar {
+    background: var(--clr-light);
+    border-radius: var(--radius-border);
+    padding: var(--padding-search);
+    border: 1px solid var(--clr-gray);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.navbar .searchbar input[type="search"] {
+    width: 30vw;
+    color: var(--clr-dark);
+    font-size: 0.9rem;
+}
+
+.navbar .searchbar input[type="search"]::placeholder {
+    color: var(--clr-gray);
+}
+
+.navbar .create-profile {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+
+/* MAIN */
+main {
+    position: relative;
+    top: var(--sticky-top-left);
+}
+
+main .container {
+    display: grid;
+    grid-template-columns: 18vw auto 20vw;
+    column-gap: 2rem;
+    position: relative;
+}
+
+
+/* MAIN LEFT */
+ .main__left {
+    height: max-content;
+    position: sticky;
+    top: var(--sticky-top-left);
+    /* top: 0; */
+    align-self: start;
+
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: .8rem;
+}
+
+.main__left .profile {
+    padding: var(--padding-card);
+    background: var(--clr-white);
+    border-radius: var(--radius-card);
+    display: flex;
+    column-gap: 1rem;
+    width: 100%;
+}
+
+
+/* SIDEBAR */
+.main__left .sidebar {
+    /* margin-top: 1rem; */
+    background: var(--clr-white);
+    border-radius: var(--radius-card);
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    /* align-items: center; */
+
+    padding: 0.5rem;
+}
+
+
+.main__left .sidebar .menu-item {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    height: 2.8rem;
+    cursor: pointer;
+    transition: all .3s;
+    /* border-radius: var(--radius-card2); */
+    /* overflow: hidden; */
+
+    position: relative;
+}
+
+.main__left .sidebar .menu-item:hover {
+    background: var(--clr-light);
+}
+
+.main__left .sidebar svg {
+    fill: var(--clr-gray);
+    /* fill: var(--clr-dark); */
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-left: 1rem;
+    /* position: relative; */
+}
+
+.main__left .sidebar i {
+    position: relative;
+    /* background: yellow; */
+    padding-block: .5rem;
+    display: grid;
+    place-items: center;
+}
+
+.main__left .sidebar i .notif-count {
+    color: var(--clr-white);
+    background: var(--clr-danger);
+    font-size: .6rem;
+    width: fit-content;
+    border-radius: 0.8rem;
+    /* border-radius: 50%; */
+    padding: 0.2rem 0.4rem;
+    position: absolute;
+    top: -0.3rem;
+    right: -0.6rem;
+}
+
+.main__left .sidebar h3 {
+    font-size: 1rem;
+}
+
+
+/* Active Class */
+.main__left .sidebar .active {
+    background: var(--clr-light);
+    /* border: 1px solid var(--clr-primary); */
+}
+
+.main__left .sidebar .active svg {
+    fill: var(--clr-primary);
+}
+
+.main__left .sidebar .active h3 {
+    color: var(--clr-primary);
+}
+
+.main__left .sidebar .active::before {
+    content: "";
+    display: block;
+    width: .5rem;
+    height: 100%;
+    position: absolute;
+    background: var(--clr-primary);
+}
+
+.main__left .sidebar .menu-item:first-child.active {
+    border-radius: var(--radius-card2) var(--radius-card2) 0 0;
+    overflow: hidden;
+}
+
+.main__left .sidebar .menu-item:last-child.active {
+    border-radius: 0 0 var(--radius-card2) var(--radius-card2);
+    overflow: hidden;
+}
+
+.main__left .btn {
+    border-radius: var(--radius-card);
+}
+
+
+/* NOTIFICATION POPUP */
+.main__left .notif-popup {
+    position: absolute;
+    top: 0;
+    left: 110%;
+    width: 30rem;
+    background: var(--clr-white);
+    border-radius: var(--radius-card);
+    padding: var(--padding-card);
+    box-shadow: 0 0 2rem var(--clr-primary);
+    display: none;
+
+    z-index: 100;
+}
+
+.main__left .notif-popup::before {
+    content: "";
+    width: 1.2rem;
+    height: 1.2rem;
+    display: block;
+    background: var(--clr-white);
+    position: absolute;
+    left: -0.55rem;
+    transform: rotate(45deg);
+}
+
+.main__left .notif-popup .notif {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.main__left .notif-popup .notif small {
+    display: block;
+    font-weight: 500;
+    font-size: .65rem;
+}

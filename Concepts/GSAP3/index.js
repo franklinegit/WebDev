@@ -4,6 +4,7 @@ import {Flip} from "gsap/Flip";
 import SplitType from 'split-type';
 
 gsap.registerPlugin(Flip);
+gsap.registerPlugin(SplitType);
 
 
 document.addEventListener("DOMContentLoaded", () => {

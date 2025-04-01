@@ -332,7 +332,6 @@ h3,
 
 
 .cover-img,
-.hero__buttons,
 .residences-info {
     clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
 }
@@ -340,4 +339,9 @@ h3,
 header,
 h2 {
     clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+}
+
+header,
+.hero__buttons {
+    clip-path: polygon(0% 0%, 0% 100%, 0% 100%, 0% 0%);
 }

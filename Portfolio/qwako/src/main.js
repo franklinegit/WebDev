@@ -110,11 +110,47 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
 
+	// CLIP PATH
+	function removeClip() {
+		const clipTl = gsap.timeline();
+
+		clipTl.to("h2", {
+			clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0 100%)",
+			duration: 1.5,
+			ease: "power4.inOut",
+			stagger: {
+				amount: 0.3
+			}
+		});
+
+		clipTl.to(".cover-img, .residences-info", {
+			clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0 100%)",
+			duration: 1.5,
+			ease: "power4.inOut",
+			stagger: {
+				amount: 0.3
+			}
+		}, ">-=1");
+
+		clipTl.to("header, .hero__buttons", {
+			clipPath: "polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%)",
+			duration: 1.5,
+			ease: "power4.inOut",
+			stagger: {
+				amount: 0.3
+			}
+		}, ">-=1");
+
+		return clipTl;
+	}
+
+
 	// MAIN TL
 	async function runAnimations() {
 		mainTl.add(revealerTl());
 		await scalingTl();  // Waits here until scaling completes
 		mainTl.add(await flipImgTl());
+		mainTl.add(removeClip());
 	}
 
 	runAnimations();

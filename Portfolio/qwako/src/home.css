@@ -1,8 +1,12 @@
 /* HOME */
 .home {
+    /* border: 2px solid red; */
     position: relative;
     margin-top: 5rem;
-    overflow: hidden;
+    /* padding-top: 8rem; */
+    /* padding-bottom: 4rem; */
+    /* margin-inline: 0rem; */
+    /* overflow: hidden; */
 }
 
 /* HEADER */
@@ -117,7 +121,9 @@ header .nav-cta .search svg {
     font-family: Inter;
     /* letter-spacing: -.1rem; */
     margin-bottom: 2rem;
-    line-height: 1.4;
+    /* margin-top: -2rem; */
+    line-height: 1.;
+    /* transform: translateY(0rem); */
 }
 
 .hero__buttons {
@@ -195,23 +201,14 @@ header .nav-cta .search svg {
     fill: var(--clr-verdigris);
 }
 
-/* Image Stack */
-.image-stack {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    /* gap: 2rem; */
-    justify-content: space-between;
-}
-
 
 /* Cover Image */
 .cover-img {
     position: absolute;
-    bottom: 0;
+    bottom: 0rem;
     right: 0.5rem;
     width: 55vw;
-    height: 80vh;
+    height: 75vh;
     border-radius: var(--radius-container);
     overflow: hidden;
     z-index: -1;
@@ -249,6 +246,16 @@ header .nav-cta .search svg {
 
 
 /* IMAGES */
+
+/* Image Stack */
+.image-stack {
+    /* border: 2px solid blue; */
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
 .images {
     position: fixed;
     top: 0;
@@ -263,7 +270,7 @@ header .nav-cta .search svg {
 
 
 .img {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1.5);
@@ -278,6 +285,42 @@ header .nav-cta .search svg {
     opacity: 1;
 }
 
+.images.images-stacked {
+    /* all: unset; */
+    /* border: 2px solid red; */
+    z-index: unset;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    /* align-items: flex-start; */
+    justify-content: space-between;
+    gap: .2rem;
+    /* padding: 0; */
+    /* margin: 0; */
+}
+
+.img.stacked {
+    /* all: unset; */
+    position: 0;
+    transform: unset;
+    top: unset;
+    left: unset;
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+    border-radius: .5rem;
+    border: 3px solid var(--clr-white);
+
+}
+
+.img.stacked.active {
+    border-color: var(--clr-verdigris);
+}
+
 
 /* Clip Path */
 /* .nav-btn,
@@ -286,3 +329,15 @@ h3,
 .cover-img {
     clip-path: polygon(0% 100%, 0% 100%, 100% 100%, 100% 100%);
 } */
+
+
+.cover-img,
+.hero__buttons,
+.residences-info {
+    clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+}
+
+header,
+h2 {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+}

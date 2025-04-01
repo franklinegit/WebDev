@@ -1,0 +1,84 @@
+/* UTILS */
+
+.container {
+    /* border: 1px solid red; */
+    padding: 1rem;
+    margin-bottom: 7rem;
+    /* height: 100vh; */
+    border-radius: var(--radius-container);
+    margin-inline: calc(4%);
+    min-height: 80vh;
+}
+
+/* NAV BTN */
+.nav-btn {
+    background: transparent;
+    position: relative;
+}
+
+.nav-btn::before {
+    content: "";
+    width: 100%;
+    height: .2rem;
+    background: var(--clr-verdigris);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 1rem;
+
+    transform-origin: right;
+    transform: scaleX(0);
+
+    transition: transform .3s ease-in-out;
+}
+
+.nav-btn:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* BTN */
+.btn {
+    font-family: Inter;
+    border: 2px solid var(--clr-verdigris);
+    border-radius: var(--radius-container);
+    padding: var(--padding-btn);
+    background: var(--clr-verdigris);
+    color: var(--clr-beige);
+    position: relative;
+    overflow: hidden;
+
+    transition: all .3s ease-in-out;
+
+    z-index: 1;
+}
+
+.btn:hover {
+    color: var(--clr-verdigris);
+    border-color: var(--clr-verdigris);
+    box-shadow: 0 0 .5rem var(--clr-verdigris);
+}
+
+.btn::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: var(--radius-btn);
+    background: var(--clr-beige);
+
+    z-index: -1;
+
+    transform-origin: right;
+    transform: scaleX(0);
+
+    transition: transform .3s ease-in-out;
+
+}
+
+.btn:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}

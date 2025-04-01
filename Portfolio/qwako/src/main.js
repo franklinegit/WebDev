@@ -144,6 +144,14 @@ document.addEventListener("DOMContentLoaded", async () => {
 		return clipTl;
 	}
 
+	// Clear zIndex
+	function clearzIndex() {
+		const clearzIndexTl = gsap.timeline();
+		clearzIndexTl.to(".revealers", {
+			zIndex: -1
+		});
+	}
+
 
 	// MAIN TL
 	async function runAnimations() {
@@ -151,6 +159,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 		await scalingTl();  // Waits here until scaling completes
 		mainTl.add(await flipImgTl());
 		mainTl.add(removeClip());
+		mainTl.add(clearzIndex());
 	}
 
 	runAnimations();

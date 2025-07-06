@@ -16,7 +16,7 @@
 }
 
 :root {
-	/* font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; */
+	font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 	line-height: 1.5;
 	font-weight: 400;
 
@@ -154,11 +154,20 @@ section.sticky {
 	background-clip: text;
 	/* filter: brightness(500); */
 	/* background-image: linear-gradient(
+		135deg,
 		var(--clr-bray-light),
 		var(--clr-bray-light)
 	); */
+	background-image: linear-gradient(
+		170deg,
+		#CD9A65 50%,
+		/* #63ace5 50%, */
+		/* #63ace5 49% 51%, */
+		#eae1dc 50%
+	);
+	/* background-size: 10% 10%; */
 	/* color: black; */
-	color: var(--clr-beige2);
+	/* color: var(--clr-beige2); */
 }
 
 

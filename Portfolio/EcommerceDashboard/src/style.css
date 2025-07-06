@@ -1,0 +1,135 @@
+
+/* Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Montserrat font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+:root {
+    --clr-gray-0: #f5f7f9;
+    --clr-gray-50: #e3e6e8;
+    --clr-gray-100: #cbcfd2;
+    --clr-gray-200: #abd3b8;
+    --clr-gray-300: #9ba1a9;
+    --clr-gray-400: #777c82;
+    --clr-gray-500: #63676b;
+    --clr-gray-600: #4c5054;
+    --clr-gray-700: #2c3236;
+    --clr-gray-800: #1e2125;
+    --clr-gray-900: #101213;
+
+    --clr-primary: #826ee6;
+    --clr-primary-variant: #229de9;
+    --clr-danger: #df4969;
+    --clr-success: #1ca5a5;
+    --clr-info: #ffcd56;
+    --clr-purple: rgb(166, 27, 191);
+
+    --transition: all .3s ease;
+
+    --radius-1: 0.4rem;
+    --radius-2: 0.8rem;
+    --radius-3: 1.2rem;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.dark {
+    --clr-gray-0: #152039;
+    --clr-gray-50: #0b0d10;
+    --clr-gray-100: #26262b;
+    --clr-gray-200: #3c3c3e;
+    --clr-gray-300: #696969;
+    --clr-gray-400: #54555b;
+    --clr-gray-500: #777982;
+    --clr-gray-600: #82848b;
+    --clr-gray-700: #aaacb6;
+    --clr-gray-800: #c0c4cc;
+    --clr-gray-900: #e2e6ec;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+
+    background: none;
+    border: none;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    
+}
+
+
+
+body {
+    font-family: Montserrat, Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 100vw;
+    background: var(--clr-gray-50);
+    padding: 1rem;
+    display: flex;
+    gap: 1.5rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--clr-gray-600);
+    /* line-height: calc(1em + .5rem); */
+    line-height: 1.5;
+    transition: var(--transition);
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--clr-gray-600);
+    transition: var(--transition);
+}
+
+button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1, h2, h, h4, h5, h6 {
+    color: var(900);
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2.4rem;
+}
+h2 {
+    font-size: 1.6rem;
+}
+h3 {
+    font-size: 1.1rem;
+}
+h4 {
+    font-size: 1rem;
+}
+h5 {
+    font-size: 0.8rem;
+}
+
+.danger {
+    color: var(--clr-danger);
+}
+.success {
+    color: var(--clr-success);
+}

@@ -1,0 +1,24 @@
+
+/* Autoshow */
+/* .autoshow {
+    animation: autoshow both;
+    animation-timeline: view(90% 5%);
+} */
+
+
+/* @keyframes autoshow {
+    from {
+        opacity: 0;
+        transform: translateY(100px) scale(0.3);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+} */
+
+
+/* .autoblur {
+    animation: autoblur;
+} */

@@ -1,0 +1,108 @@
+/* SIDEBAR */
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 95vh;
+    justify-content: space-between;
+    min-width: fit-content;
+    width: 12rem;
+    /* border: 1px solid red; */
+
+    position: sticky;
+    top: 1rem;
+}
+
+.sidebar svg {
+    width: 1rem;
+    height: 1rem;
+    fill: var(--clr-gray-900);
+    fill: var(--clr-gray-500);
+}
+
+/* Sidebar logo */
+.sidebar__logo {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    /* border: 1px solid red; */
+
+}
+
+.sidebar__logo img {
+    width: 2.4rem;
+    background: var(--clr-gray-0);
+    padding: 0.5rem;
+    border-radius: var(--radius-2);
+}
+
+.sidebar__logo svg {
+    width: 2.4rem;
+    background: var(--clr-gray-0);
+    padding: 0.5rem;
+    border-radius: var(--radius-2);
+    fill: var(--clr-primary);
+}
+
+.sidebar__logo h3 {
+    font-size: 1.4rem;
+    letter-spacing: -1px;
+    font-weight: 700;
+}
+
+.sidebar__logo h3 span {
+    color: var(--clr-primary);
+}
+
+
+/* Sidebar top & bottom */
+.sidebar__top,
+.sidebar__bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.sidebar__top a,
+.sidebar__bottom a {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    border-radius: 0.6rem;
+    padding: 0.8rem;
+}
+
+.sidebar__top a:hover,
+.sidebar__bottom a:hover {
+    transform: translateX(0.5rem);
+    background: var(--clr-gray-0);
+}
+
+.sidebar__top a svg,
+.sidebar__bottom a svg {
+    fill: var(--clr-primary);
+    fill: var(--clr-gray-500);
+}
+
+.sidebar__top a h5,
+.sidebar__bottom a h5 {
+    color: var(--clr-gray-500);
+}
+
+.sidebar a.active {
+    background: var(--clr-primary);
+}
+
+.sidebar a.active svg {
+    fill: var(--clr-gray-0);
+}
+
+.sidebar a.active h5 {
+    color: var(--clr-gray-0);
+}
+
+
+.sidebar__toggle-open,
+.sidebar__toggle-close {
+    display: none;
+}

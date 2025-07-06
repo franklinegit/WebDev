@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 				scaleTl.to(img, {
 					scale: 1,
 					opacity: 1,
-					duration: 1.25,
+					duration: 1.0,
 					fade: true,
 					ease: "power3.inOut"
 				}, ">-.25")
@@ -104,8 +104,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 			}
 		});
 
-
-
         return flipTl;
     }
 
@@ -114,7 +112,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 	function removeClip() {
 		const clipTl = gsap.timeline();
 
-		clipTl.to("h2", {
+		clipTl.to(".hero__content h2", {
 			clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0 100%)",
 			duration: 1.5,
 			ease: "power4.inOut",
@@ -123,7 +121,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 			}
 		});
 
-		clipTl.to(".cover-img, .residences-info", {
+		clipTl.to(".cover-img, .residences-info, header", {
 			clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0 100%)",
 			duration: 1.5,
 			ease: "power4.inOut",
@@ -132,7 +130,19 @@ document.addEventListener("DOMContentLoaded", async () => {
 			}
 		}, ">-=1");
 
-		clipTl.to("header, .hero__buttons", {
+		clipTl.from(".cover-img", {
+			yPercent: -100,
+			scale: .5,
+			rotate: -360,
+			duration: 1.5
+		}, "<");
+
+		// clipTl.from(".cover-img", {
+		// 	scale: 1.5,
+		// 	duration: 1.0
+		// });
+
+		clipTl.to("header, .hero__buttons, .residences-info", {
 			clipPath: "polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%)",
 			duration: 1.5,
 			ease: "power4.inOut",
@@ -164,4 +174,24 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 	runAnimations();
 
+
+	// CENTER LISTINGS
+	function centerMiddleItem() {
+		const list = document.querySelector(".list");
+		const listItems = Array.from(document.querySelectorAll(".list__item"));
+
+		if (!list || listItems.length === 0) return;
+
+		const middleIndex = Math.floor(listItems.length / 2);
+		const middleItem = listItems[middleIndex];
+		const listWidth = list.clientWidth;
+		const itemWidth = middleItem.clientWidth
+
+		list.scrollLeft = middleItem.offsetLeft - (listWidth / 2) + (itemWidth / 2);
+	}
+
+	window.addEventListener("load", centerMiddleItem);
+	window.addEventListener("resize", centerMiddleItem);
+
 });
+

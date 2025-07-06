@@ -45,7 +45,7 @@ header .logo i {
     border-radius: 50%;
     position: relative;
     background: var(--clr-verdigris);
-    box-shadow: 0 0 .5rem var(--clr-verdigris);
+    /* box-shadow: 0 0 .5rem var(--clr-verdigris); */
 }
 
 header .logo i svg {
@@ -127,19 +127,24 @@ header .nav-cta .search svg {
 }
 
 .hero__buttons {
+    /* border: 1px solid red; */
     display: flex;
     align-items: center;
     gap: 2rem;
     margin-bottom: 3rem;
+    padding: .2rem;
+    overflow: visible;
 }
 
-.hero__buttons >:first-child {
+.hero__buttons >:first-child,
+.listings .btn {
     display: flex;
     /* align-items: baseline; */
     gap: .5rem;
 }
 
-.hero__buttons>:first-child i {
+.hero__buttons>:first-child i,
+.listings .btn i {
     /* background: yellow; */
     padding-bottom: 0;
     fill: var(--clr-verdigris);
@@ -148,9 +153,14 @@ header .nav-cta .search svg {
     /* align-items: end; */
     justify-content: flex-end;
 }
-.hero__buttons>:first-child i svg{
+.hero__buttons>:first-child i svg,
+.listings .btn i svg {
     fill: var(--clr-beige);
 }
+
+/* Hover btn */
+/* .hero__buttons>:first-child:hover */
+
 
 .hero__buttons >:nth-child(2) {
     text-decoration: underline;
@@ -172,7 +182,7 @@ header .nav-cta .search svg {
     padding: .5rem 1rem;
     width: 80%;
     border-radius: .5rem;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
     border: 1px solid var(--clr-white);
     
 }
@@ -184,20 +194,23 @@ header .nav-cta .search svg {
     font-weight: bold;
 }
 
-.residences-info .amenities {
+.residences-info .amenities,
+.list__info .amenities {
     display: flex;
     align-items: center;
     gap: .7rem;
 }
 
-.residences-info .amenities i {
+.residences-info .amenities i,
+.list__info .amenities i {
     display: flex;
     align-items: center;
     gap: .3rem;
     font-weight: bold;
 }
 
-.residences-info .amenities svg {
+.residences-info .amenities svg,
+.list__info .amenities svg {
     fill: var(--clr-verdigris);
 }
 
@@ -208,16 +221,17 @@ header .nav-cta .search svg {
     bottom: 0rem;
     right: 0.5rem;
     width: 55vw;
-    height: 75vh;
+    height: 90vh;
     border-radius: var(--radius-container);
     overflow: hidden;
     z-index: -1;
+    mix-blend-mode: darken;
 
-    /* mask: linear-gradient(
+    mask: linear-gradient(
         90deg,
         transparent,
-        white 20%
-    ); */
+        var(--clr-beige) 10%
+    );
 }
 
 
@@ -313,6 +327,7 @@ header .nav-cta .search svg {
     width: 5rem;
     height: 5rem;
     border-radius: .5rem;
+    /* border: 3px solid var(--clr-black); */
     border: 3px solid var(--clr-white);
 
 }
@@ -332,16 +347,17 @@ h3,
 
 
 .cover-img,
-.residences-info {
+.residences-info,
+header {
     clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
 }
 
-header,
-h2 {
+.hero__content h2 {
     clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
 }
 
 header,
-.hero__buttons {
+.hero__buttons,
+.residences-info {
     clip-path: polygon(0% 0%, 0% 100%, 0% 100%, 0% 0%);
 }

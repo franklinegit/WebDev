@@ -21,7 +21,9 @@
   -moz-osx-font-smoothing: grayscale;
 
   --clr-verdigris: rgb(67, 179, 174);
+  --clr-verdigris-light: rgba(66, 179, 173, .4);
   --clr-beige: rgb(245, 245, 220);
+  --clr-bray: rgb(222, 222, 222);
   --clr-white: rgb(255, 255, 255);
   --clr-black: black;
   --clr-gray: rgb(134, 132, 132);
@@ -61,7 +63,7 @@ html {
 body {
   /* padding: 1% 3%; */
   background: var(--clr-white);
-  background: var(--clr-beige);
+  background: var(--clr-bray);
 }
 
 a,
